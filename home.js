@@ -1,5 +1,5 @@
 // js/home.js
-const SENHA = 'eqtlstcgyn26';
+const SENHA = 'eqtlstcmetro26';
 
 function setupModal(btnId, modalId, inputId, errorId, cancelId, confirmId, destino) {
   const btn    = document.getElementById(btnId);
