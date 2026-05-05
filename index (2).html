@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="theme-color" content="#0D47A1"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Sistema de Retrabalho — Equatorial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="home-page">
+  <div class="bg-grid"></div>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <main class="home-container">
+    <header class="home-header">
+      <div class="logo-badge">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="24" fill="url(#grad1)"/>
+          <path d="M12 24 L24 12 L36 24 L24 36 Z" fill="none" stroke="#fff" stroke-width="2.5"/>
+          <circle cx="24" cy="24" r="4" fill="#F9A825"/>
+          <defs><linearGradient id="grad1" x1="0" y1="0" x2="48" y2="48">
+            <stop offset="0%" stop-color="#1565C0"/><stop offset="100%" stop-color="#0D47A1"/>
+          </linearGradient></defs>
+        </svg>
+      </div>
+      <div class="header-text">
+        <span class="grupo-label">GRUPO</span>
+        <h1 class="brand-title">equatorial</h1>
+        <p class="system-subtitle">Sistema de Gestão de Retrabalho</p>
+      </div>
+    </header>
+
+    <!-- 3 BOTÕES DE NAVEGAÇÃO -->
+    <section class="nav-cards nav-cards--four">
+      <a href="pesquisa.html" class="nav-card card-blue">
+        <div class="card-icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <circle cx="16" cy="16" r="9" stroke="white" stroke-width="2.2"/>
+            <line x1="22.5" y1="22.5" x2="30" y2="30" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="card-content">
+          <h2>Pesquisa de UC</h2>
+          <p>Consulte o histórico completo de atendimentos, Gantt e causas por unidade consumidora.</p>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+
+      <a href="alertas.html" class="nav-card card-amber" id="btn-alertas">
+        <div class="card-icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M18 4L18 8" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M7 18C7 12 12 7 18 7C24 7 29 12 29 18L29 26L7 26Z" stroke="white" stroke-width="2.2" stroke-linejoin="round"/>
+            <path d="M14 26C14 28.2 15.8 30 18 30C20.2 30 22 28.2 22 26" stroke="white" stroke-width="2.2"/>
+            <circle cx="18" cy="18" r="2" fill="#F9A825"/>
+          </svg>
+        </div>
+        <div class="card-content">
+          <h2>Alertas de Campo</h2>
+          <p>Retrabalho confirmado, possível retrabalho e primeiro atendimento em tempo real.</p>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+
+      <a href="detalhamento.html" class="nav-card card-teal" id="btn-detalhamento">
+        <div class="card-icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <rect x="6" y="6" width="24" height="24" rx="4" stroke="white" stroke-width="2.2"/>
+            <path d="M12 14h12M12 19h8M12 24h5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="card-content">
+          <h2>UCs em Retrabalho</h2>
+          <p>Detalhamento das UCs com retrabalho ativo sem ocorrência aberta no momento.</p>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+
+      <a href="callback.html" class="nav-card card-callback">
+        <div class="card-icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M8 8h4l2 5-2.5 1.5a14 14 0 006 6L19 18l5 2v4a2 2 0 01-2 2A20 20 0 018 10a2 2 0 012-2z" stroke="white" stroke-width="2.2" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="card-content">
+          <h2>Sugestão de Call-Back</h2>
+          <p>UCs com últimos atendimentos improcedentes — candidatas a retorno ativo.</p>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+
+      <a href="evolucao.html" class="nav-card card-evolucao">
+        <div class="card-icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <polyline points="6,28 14,18 20,22 30,10" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <circle cx="14" cy="18" r="2" fill="white"/>
+            <circle cx="20" cy="22" r="2" fill="white"/>
+            <circle cx="30" cy="10" r="2" fill="white"/>
+          </svg>
+        </div>
+        <div class="card-content">
+          <h2>Evolução do Indicador</h2>
+          <p>Acompanhamento diário, semanal e mensal do Balde de Retrabalho.</p>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+    </section>
+
+    <!-- UPLOAD DAS BASES -->
+    <section class="upload-section">
+      <h3 class="upload-title">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" style="margin-right:8px;vertical-align:-3px">
+          <path d="M9 1v10M5 5l4-4 4 4M2 13v2a1 1 0 001 1h12a1 1 0 001-1v-2" stroke="#F9A825" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Atualizar Bases de Dados
+      </h3>
+      <div class="upload-grid" style="grid-template-columns:1fr 1fr 1fr">
+
+        <div class="upload-card">
+          <label class="upload-label">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+              <rect x="3" y="3" width="20" height="20" rx="3" stroke="#1565C0" stroke-width="1.8"/>
+              <path d="M7 13h12M7 9h8M7 17h6" stroke="#1565C0" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+            <span class="upload-type">Base Histórica</span>
+            <span class="upload-hint">Composição do Balde do Retrabalho</span>
+            <input type="file" accept=".xlsx,.xls" id="file-historico" hidden/>
+            <span class="upload-btn">Escolher arquivo</span>
+          </label>
+          <div class="upload-status" id="status-historico"></div>
+        </div>
+
+        <div class="upload-card">
+          <label class="upload-label">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+              <rect x="3" y="3" width="20" height="20" rx="3" stroke="#F9A825" stroke-width="1.8"/>
+              <path d="M13 7v12M7 13h12" stroke="#F9A825" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+            <span class="upload-type">Ocorrências Ativas</span>
+            <span class="upload-hint">Extração atual do Decômetro (ocorrências em aberto)</span>
+            <input type="file" accept=".xlsx,.xls" id="file-atual" hidden/>
+            <span class="upload-btn">Escolher arquivo</span>
+          </label>
+          <div class="upload-status" id="status-atual"></div>
+        </div>
+
+        <div class="upload-card">
+          <label class="upload-label">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+              <rect x="3" y="3" width="20" height="20" rx="3" stroke="#00897B" stroke-width="1.8"/>
+              <path d="M7 17l4-4 3 3 5-6" stroke="#00897B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="upload-type">Histórico por Período</span>
+            <span class="upload-hint">Meses fechados para análise de possível retrabalho (até 4 arquivos)</span>
+            <input type="file" accept=".xlsx,.xls" id="file-recente" multiple hidden/>
+            <span class="upload-btn">Escolher arquivos</span>
+          </label>
+          <div class="upload-status" id="status-recente"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PAINEL DE STATUS DAS BASES -->
+    <section class="bases-status" id="bases-status">
+      <div class="bases-status-title">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink:0">
+          <circle cx="8" cy="8" r="7" stroke="#F9A825" stroke-width="1.5"/>
+          <path d="M8 5v4M8 11v.5" stroke="#F9A825" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        Bases carregadas no sistema
+      </div>
+      <div id="bases-chips" class="bases-chips">
+        <span class="bases-loading">Verificando...</span>
+      </div>
+    </section>
+
+    <footer class="home-footer">
+      <span>© 2026 Grupo Equatorial Energia — Sistema de Gestão de Retrabalho</span>
+    </footer>
+  </main>
+
+  <!-- Modal senha alertas -->
+  <div class="modal-overlay" id="modal-senha" style="display:none">
+    <div class="modal-box">
+      <h3>Acesso Restrito</h3>
+      <p>Digite a senha para acessar os alertas de campo.</p>
+      <input type="password" id="input-senha" placeholder="Senha..." class="modal-input"/>
+      <div class="modal-error" id="modal-error" style="display:none">Senha incorreta.</div>
+      <div class="modal-actions">
+        <button class="btn-cancel" id="btn-cancel-modal">Cancelar</button>
+        <button class="btn-confirm" id="btn-confirm-modal">Entrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal senha detalhamento -->
+  <div class="modal-overlay" id="modal-senha-det" style="display:none">
+    <div class="modal-box">
+      <h3>Acesso Restrito</h3>
+      <p>Digite a senha para acessar o detalhamento.</p>
+      <input type="password" id="input-senha-det" placeholder="Senha..." class="modal-input"/>
+      <div class="modal-error" id="modal-error-det" style="display:none">Senha incorreta.</div>
+      <div class="modal-actions">
+        <button class="btn-cancel" id="btn-cancel-det">Cancelar</button>
+        <button class="btn-confirm" id="btn-confirm-det">Entrar</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-init.js"></script>
+  <script src="causas-improcedentes.js"></script>
+  <script src="upload.js"></script>
+  <script src="upload-recente.js"></script>
+  <script src="home.js"></script>
+</body>
+</html>

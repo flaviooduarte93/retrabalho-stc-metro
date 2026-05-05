@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="theme-color" content="#0D47A1"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Pesquisa de UC — Equatorial Retrabalho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="inner-page">
+
+  <nav class="topbar">
+    <div class="topbar-brand">
+      <span class="brand-title">eq<span>ua</span>torial</span>
+      <span class="topbar-badge">Retrabalho</span>
+    </div>
+    <!-- Breadcrumb de navegação — preenchido pelo JS conforme origem -->
+    <div class="topbar-nav" id="topbar-nav">
+      <a href="index.html" class="topbar-navitem">Início</a>
+    </div>
+  </nav>
+
+  <main class="page-main" id="app">
+    <h1 class="page-title">Pesquisa de UC</h1>
+    <p class="page-subtitle">Digite a Unidade Consumidora para consultar o histórico de atendimentos.</p>
+
+    <div class="search-box">
+      <input type="text" class="search-input" id="search-input"
+             placeholder="Número da UC..." autocomplete="off"/>
+      <button class="search-btn" id="search-btn">Pesquisar</button>
+    </div>
+
+    <div id="resultado"></div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-init.js"></script>
+  <script src="causas-improcedentes.js"></script>
+  <script src="pesquisa.js"></script>
+</body>
+</html>
